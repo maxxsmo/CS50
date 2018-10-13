@@ -1,3 +1,14 @@
+/*
+- Maxime Smolis
+- building the half reverse pyramid of Mario
+- pattern : 
+               ##
+              ###
+             ####
+            #####
+
+*/
+
 #include <cs50.h>
 #include <stdio.h>
 
