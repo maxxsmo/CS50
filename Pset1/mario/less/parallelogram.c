@@ -6,7 +6,7 @@
               ########
              ########
             ########
-- hint : third for loop -> condition = hashes - height
+- hint : third for loop -> condition = hashes < height
 
 */
 
