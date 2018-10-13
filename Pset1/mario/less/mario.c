@@ -1,15 +1,26 @@
+#include <cs50.h>
 #include <stdio.h>
-#include<cs50.h>
 
 int main(void)
 {
-    int i = get_String("height : ");
-    // print the height 
-    for(i=0;i<23;i++) 
+    int height;
+    do
     {
-        for(j=0;j<i;j++) 
+        height = get_int("number : ");
+    }
+    while (height <= 0 && height >= 23);
+    // set the pyramid
+    for(int rows=0; rows< height; rows++)
+    {
+        for(int spaces=(height - rows); spaces >0; spaces--)
         {
-            printf("# ");
+            printf(" ");
         }
-    } printf(" \n");
-}
+
+        for(int hashes=0; hashes<=(rows+1); hashes++)
+        {
+            printf("#");
+        }
+            printf(" \n");
+        }
+    }
