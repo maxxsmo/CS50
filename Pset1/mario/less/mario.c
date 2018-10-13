@@ -12,7 +12,7 @@ int main(void)
     // set the pyramid
     for(int rows=0; rows< height; rows++)
     {
-        for(int spaces=(height - rows); spaces >0; spaces--)
+        for(int spaces=(height - rows -1); spaces >0; spaces--)
         {
             printf(" ");
         }
