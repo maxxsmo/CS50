@@ -26,7 +26,7 @@ int main(void)
     {
         height = get_int("Hello ! Please pick a number between 0 and 23 : ");
     }
-    while (height <= 0 && height >= 23);
+    while (height <= 0 || height >= 23);
     // initialize the pattern
     for(int rows=0; rows< height; rows++)
     {

@@ -23,7 +23,7 @@ int main(void)
     {
         height = get_int("number : ");
     }
-    while (height <= 0 && height >= 23);
+    while (height <= 0 || height >= 23);
     // set the pyramid
     for(int rows=0; rows< height; rows++)
     {
