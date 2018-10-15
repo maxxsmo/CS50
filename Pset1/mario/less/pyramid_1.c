@@ -10,7 +10,7 @@
             ######
 
 
-Starting at two hashes (cf -> for(intj=0;j<i+1;j++))
+Starting at two hashes (cf -> for(intj=0;j<i+2;j++))
 
 */
 
@@ -20,20 +20,20 @@ Starting at two hashes (cf -> for(intj=0;j<i+1;j++))
 int main(void)
 {
     
-    int n;
+    int height;
     // Verify height between 0 and 23
     do
     {
-        n = get_int("Hello ! Please pick a number between 0 and 23 : ");
+        height = get_int("Hello ! Please pick a number between 0 and 23 : ");
     }
-    while (n <= 0 && n => 23);
+    while (height <= 0 && height >= 23);
     // initialize the pattern
-    for(int i=0; i< n; i++)
+    for(int rows=0; rows< height; rows++)
     {
         // print the hashes
-        for(int j=0; j<i+1;j++)
+        for(int hashes=0; hashes<=rows+1;hashes++)
         {
-            printf("# ");
+            printf("#");
         }
         printf(" \n");
     }
